@@ -1,0 +1,16 @@
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+// @mixin bd( $width: 2px, $color: red ) {
+//     @if type-of($width) == 'number' {
+//         border: $width solid $color;
+//     } @else {
+//         border: $color solid $width;
+//     }
+// }
+
+@mixin bd( $color: red, $width: 2px ) {
+    border: $width solid $color;
+}

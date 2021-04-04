@@ -1,0 +1,50 @@
+.nav__ {
+
+    &container {
+        // @include bd;
+        @extend %white-bg;
+    }
+    
+    &logo {
+        @extend %blue-font;
+
+        font-size: 1.75em;
+        font-weight: $weight700;
+
+        // line-height: 25px;
+    }
+    
+    &list- {
+        
+        &container {
+            @extend %tt;
+
+            // @include bd(blue);
+            @extend %container;
+            
+            @extend %flex;
+            
+            > div {
+                // @include bd(blue);
+
+                @extend %flex;
+                margin: auto;
+                
+                > :not( .nav__list-item:first-child ) {
+                    // @include bd(green);
+                    margin-left: 3.75em;
+                }
+                
+            }
+
+        }
+    }
+
+    &link {
+        
+    }
+
+
+} 
+
+

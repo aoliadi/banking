@@ -1,0 +1,28 @@
+.btn {
+    border-radius: 1rem;
+    @extend %white-font;
+    @include bd($blue);
+    @extend %blue-bg;
+    @extend %tt;
+    transition: 
+        .25s 
+        background-color
+        cubic-bezier(0.4, 0, 1, 1);
+
+    &:hover {
+        @extend %white-bg;
+    }
+
+    
+    &--nav {
+        font-size: 1.125rem;
+        padding: 1.3em 2em;
+        margin-left: 2.375em;
+        
+    }
+    
+    &--hero {
+        font-size: 1.25rem;
+        padding: 1.5em 3em;
+    }
+}

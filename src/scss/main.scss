@@ -1,3 +1,17 @@
-* {
-    border: 'test';
-}
+@import "./global/normalize/import-now";
+
+@import "./project/base/reset";
+@import "./project/base/typography";
+@import "./project/base/color";
+
+@import "./project/utils/variables";
+@import "./project/utils/mixins";
+@import "./project/utils/placeholders";
+@import "./project/utils/functions";
+
+@import "./project/components/anchor-tags";
+@import "./project/components/buttons";
+
+@import "./project/pages/homepage/home";
+
+// @import "./project/vendors/";
