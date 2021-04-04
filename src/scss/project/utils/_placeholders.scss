@@ -28,6 +28,10 @@
 %flex {
     display: flex;
     flex-flow: row wrap;
+}
+
+%flex-center {
+    @extend %flex;
     @include flex-center;
 }
 
