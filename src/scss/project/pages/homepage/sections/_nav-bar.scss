@@ -1,0 +1,48 @@
+.nav__ {
+    &container {
+        // @include bd;
+    }
+    
+    &list- {
+        
+        &container {
+            width: 100%;
+            @extend %container;
+            @extend %flex-center;
+            // @include bd(green);
+            // justify-content: center;
+            
+            > div {
+                > .nav__list-item:not(:nth-of-type(1)) >.nav__link {
+                    // @include bd(purple);
+                    // padding-left: 3.75em;
+                    margin-left: 3.75em;
+                }
+
+                @extend %margin-auto;
+                @extend %flex-center;
+            }
+            
+        }
+        
+        &item {
+            // @include bd(blue);
+            color: $grey;
+
+        }
+
+    }
+
+    &link {
+    
+        // margin-left: 60px;
+        // @include bd(purple);
+        // padding: 20px;
+    }
+
+    &logo {
+        font-size: 1.75rem;
+        font-weight: $weight700;
+        @extend %blue-font;
+    }
+} 

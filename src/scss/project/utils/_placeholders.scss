@@ -57,3 +57,16 @@
 %tt {
     text-transform: capitalize;
 }
+
+// HIDE AT 1000px AND BELOW
+%hide-below-1000 {
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+%show-below-1000 {
+    @media (min-width: 1000px) {
+        display: none;
+    }
+}

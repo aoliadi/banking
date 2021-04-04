@@ -1,0 +1,7 @@
+.for-mobile {
+    @extend %show-below-1000;
+}
+
+.for-desktop {
+    @extend %hide-below-1000;
+}
