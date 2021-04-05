@@ -1,12 +1,12 @@
 .nav__ {
     &container {
-        // @include bd;
+        // @include bd; 
     }
     
     &list- {
         
         &container {
-            width: 100%;
+            // width: 100%;
             @extend %container;
             @extend %flex-center;
             // @include bd(green);

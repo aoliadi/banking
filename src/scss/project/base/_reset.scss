@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    @extend %white-bg;
+}
+
 ul {
     list-style-type: none;
 }

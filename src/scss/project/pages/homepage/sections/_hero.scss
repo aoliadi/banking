@@ -1,0 +1,103 @@
+.hero__ {
+
+    &container {
+
+        @extend %container;
+        // @include bd(BLUE);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &wrapper {
+        @extend %flex-center;
+        // padding: 0;
+
+        @media (max-width: 1215px) {
+            flex-flow: column-reverse wrap;
+            
+        }
+        
+        > * {
+            // @include bd(blue);
+            flex: 1 1 575px;
+            width: 80%;
+            max-width: 650px;
+            
+            padding-left: 6.5vw;
+            padding-right: 1.5em;
+            
+            margin-bottom: 1em;
+            
+            @media (max-width: 1215px) {
+                * {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+            }
+            
+            @media (max-width: 1215px) {
+                text-align: center;
+                flex: auto;
+                padding: 0;
+                
+            }
+        }
+        
+    }
+    
+    &flex-1 {
+    }
+    
+    &flex-2 {
+        @extend %blue-bg;
+    }
+    
+    &heading {
+        // @include bd(green);
+        font-size: 3.5rem;
+        font-weight: $weight700;
+        @extend %black-font;
+        
+        line-height: 70px;
+        @extend %tt;
+        
+        width: 100%;
+        // max-width: 441px;
+        max-width: 485px;
+    }
+    
+    &sub-heading {
+        // @include bd(green);
+        font-size: 1.25rem;
+        font-weight: $weight400;
+        color: rgba(54, 61, 112, 1);
+
+        line-height: 1.7em;
+        letter-spacing: 0.015em;
+        
+        width: 100%;
+        max-width: 332px;
+        // max-width: 100%;
+        
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        @media (max-width: 1215px) {
+            max-width: 400px;
+        }
+    }
+
+    &img {
+        width: 100%;
+        // @include bd(red);
+        
+        // &-container {
+        //     display: grid;
+        //     border: 5px solid green;
+        //     place-items: center;
+        //     // max-width: 100%;
+        //     // @include bd;
+        // }
+    }
+} 

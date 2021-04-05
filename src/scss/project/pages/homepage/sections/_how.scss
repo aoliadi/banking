@@ -1,0 +1,95 @@
+.how__ {
+
+    &container {
+        // @include bd;
+        // @include bd;
+        @extend %container;
+        padding-top: 5em;
+        padding-bottom: 5em;
+
+    }
+    
+    &header {
+        text-align: center;
+        // @include bd(green);
+
+        width: 100%;
+        max-width: 455px;
+
+        @extend %margin-auto;
+        
+    }
+    
+    &heading {
+        // @include bd(blue);
+        font-size: 3em;
+        font-weight: $weight600;
+        // line-height: 72px;
+        
+    }
+    
+    &sub-heading {
+        color: $lighter-grey;
+        
+        font-size: 1.125em;
+        font-weight: $weight400;
+        letter-spacing: 0.015em;
+        
+        line-height: 2em;
+        
+        
+        // margin-top: 1.125em;
+    }
+    
+    &list- {
+        
+        &container {
+            // @include bd(blue);
+            @extend %flex-center;
+            padding: 2em 0;
+        }
+        
+        &item {
+            flex: 0 1 258px;
+            // @include bd(green)
+            // @include bd(blue);
+            
+        }
+
+        &img-container {
+            // @include bd(red);
+            margin: 2em;
+
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            
+        }
+
+        &img {
+            width: 100%;
+            // @include bd;
+            // margin-bottom: 3em;
+        }
+        
+        &heading {
+            @extend %tt;
+            margin: 1em;
+        }
+
+        &paragraph {
+                        
+            font-weight: $weight400;
+            font-size: 1.125em;
+            line-height: 1.375em;
+            letter-spacing: 0.015em;
+            
+            @extend %black-font;
+        }
+    }
+    
+    
+} 
